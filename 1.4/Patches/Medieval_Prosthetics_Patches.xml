@@ -1,0 +1,525 @@
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+	<mods>
+		<li>Medieval Prosthetics</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+	<!-- Basic -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "IronArm"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>CraftingSpot</li>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ProstheticHook"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>CraftingSpot</li>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodenFoot"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>CraftingSpot</li>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>			
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodenToe"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>CraftingSpot</li>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>			
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodenFinger"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>CraftingSpot</li>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodenNose"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>CraftingSpot</li>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "EyePatch"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>CraftingSpot</li>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "EarPatch"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>CraftingSpot</li>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>	
+
+	<!-- ArtificialMed -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ArtificialMedHand"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>CraftingSpot</li>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ArtificialMedArm"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>CraftingSpot</li>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>			
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ArtificialMedLeg"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>CraftingSpot</li>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>			
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ArtificialMedFoot"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>CraftingSpot</li>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>			
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ArtificialMedToe"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>CraftingSpot</li>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>			
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ArtificialMedFinger"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>CraftingSpot</li>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>			
+			
+				<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ArtificialMedNose"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>CraftingSpot</li>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>		
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ArtificialMedEye"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>CraftingSpot</li>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>			
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ArtificialMedEar"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>CraftingSpot</li>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>					
+			
+	<!-- MechanicalMed -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MechanicalMedHand"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MechanicalMedArm"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MechanicalMedLeg"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MechanicalMedFoot"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MechanicalMedToe"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MechanicalMedFinger"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MechanicalMedNose"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MechanicalMedEye"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MechanicalMedEar"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>
+			
+	<!-- AmbroisenMed -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "AmbroisenMedHand"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>			
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "AmbroisenMedArm"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "AmbroisenMedLeg"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "AmbroisenMedFoot"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "AmbroisenMedToe"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "AmbroisenMedFinger"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "AmbroisenMedNose"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "AmbroisenMedEye"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "AmbroisenMedEar"]</xpath>
+				<value>
+					<recipeMaker>
+						<recipeUsers>
+							<li>FueledSmithy</li>
+							<li>CraftingWorkBench</li>
+							<li>AYCharcoalSmithy</li>
+							<li>ElectricSmithy</li>
+						</recipeUsers>
+					</recipeMaker>
+				</value>
+			</li>	
+
+		</operations>	
+	</match>
+</Operation>
+
+</Patch>

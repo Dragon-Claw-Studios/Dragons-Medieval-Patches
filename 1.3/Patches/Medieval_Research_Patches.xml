@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Raise The Roof - overhead mountain removal -->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName = "RTR_OverheadMountainRemoval"]/techLevel</xpath>
+				<value>
+					<techLevel>Medieval</techLevel>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "RTR_OverheadMountainRemoval"]/prerequisites</xpath>
+			</li>
+		</operations>
+	</Operation>	
+
+	<!-- Fertile Fields - Terraforming -->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName = "RFF_Terraforming"]/techLevel</xpath>
+				<value>
+					<techLevel>Medieval</techLevel>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "RFF_Terraforming"]/prerequisites</xpath>
+			</li>
+		</operations>
+	</Operation>	
+
+	<!-- Simple Material Weaves - Segmented Clothing Material -->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "ScaleFabricResearch"]/prerequisites</xpath>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Simple Material Weaves - Standard Material Weaving -->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName = "StandardWeaveResearch"]/techLevel</xpath>
+				<value>
+					<techLevel>Medieval</techLevel>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName = "StandardWeaveResearch"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+						<li>ScaleFabricResearch</li>
+					</prerequisites>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Simple Material Weaves - Complex Material Weaving -->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName = "ComplexWeaveResearch"]/techLevel</xpath>
+				<value>
+					<techLevel>Medieval</techLevel>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName = "ComplexWeaveResearch"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+						<li>StandardWeaveResearch</li>
+					</prerequisites>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "ComplexWeaveResearch"]/requiredResearchBuilding</xpath>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- A Dog Said - Animal Heal -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName = "AnimalHeal"]/techLevel</xpath>
+				<value>
+					<techLevel>Medieval</techLevel>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "AnimalHeal"]/requiredResearchBuilding</xpath>
+			</li>
+		</operations>
+	</Operation>	
+
+	<!-- Amrita -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName = "Amrita"]/techLevel</xpath>
+				<value>
+					<techLevel>Medieval</techLevel>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName = "Amrita"]/baseCost</xpath>
+				<value>
+					<baseCost>4000</baseCost>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "Amrita"]/prerequisites</xpath>
+			</li>
+		</operations>
+	</Operation>	
+
+
+</Patch>
+

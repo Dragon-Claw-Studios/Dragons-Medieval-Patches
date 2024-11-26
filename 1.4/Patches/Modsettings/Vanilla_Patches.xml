@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<Operation Class="XmlExtensions.CreateSettings">
+    <modId>DragonsMedievalPatches</modId> <!--String that XML Extensions can identify your mod with-->
+    <label>Dragon's Medieval Patches</label>
+    <settings>
+	<li Class="XmlExtensions.Setting.Text">
+	    <text>Dragon's Medieval Patches</text>
+	    <font>Medium</font>
+	    <anchor>Middle</anchor>
+	</li>
+	<li Class="XmlExtensions.Setting.GapLine"/>
+	<li Class="XmlExtensions.Setting.SetColor">
+	    <color>(255,255,0)</color>
+	</li>
+	<li Class="XmlExtensions.Setting.Text">
+	    <text>Setting changes requires a restart to take effect!</text>
+	    <anchor>Middle</anchor>
+	</li>
+
+	<li Class="XmlExtensions.Setting.SetColor"/>
+	<!-- Settings - Flammability -->
+	<li Class="XmlExtensions.Setting.Gap"/>
+	<li Class="XmlExtensions.Setting.Checkbox">
+        <key>DMPVanillaOresCommonality</key>
+	    <defaultValue>true</defaultValue>
+        <label>Vanilla ore commonality changes</label>
+	    <tKey>DragonsOres_DMPToggleVanillaOresCommonality</tKey>
+	    <tooltip>Doubles the commonality of vanilla ores, which is useful when adding many additional ores.</tooltip>
+	    <tKeyTip>DMPVanillaOresCommonalityTip</tKeyTip>
+    </li>
+
+	<li Class="XmlExtensions.Setting.ResetSettings"/>
+    </settings>
+</Operation>
+
+	<!-- Patching - Flammability -->
+<Operation Class="XmlExtensions.OptionalPatch">
+    <modId>DragonsOresOriginal</modId>
+    <key>DMPVanillaOresCommonality</key>
+    <defaultValue>true</defaultValue>
+    <caseTrue>
+	<!--compacted steel-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MineableSteel"]/building/mineableScatterCommonality</xpath>
+				<value>
+						<mineableScatterCommonality>2</mineableScatterCommonality>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--silver ore-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MineableSilver"]/building/mineableScatterCommonality</xpath>
+				<value>
+						<mineableScatterCommonality>0.2</mineableScatterCommonality>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--gold ore-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MineableGold"]/building/mineableScatterCommonality</xpath>
+				<value>
+						<mineableScatterCommonality>0.14</mineableScatterCommonality>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--uranium ore-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MineableUranium"]/building/mineableScatterCommonality</xpath>
+				<value>
+						<mineableScatterCommonality>0.24</mineableScatterCommonality>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--compacted plasteel-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MineablePlasteel"]/building/mineableScatterCommonality</xpath>
+				<value>
+						<mineableScatterCommonality>0.1</mineableScatterCommonality>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--jade-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MineableJade"]/building/mineableScatterCommonality</xpath>
+				<value>
+						<mineableScatterCommonality>0.13</mineableScatterCommonality>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--compacted machinery-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MineableComponentsIndustrial"]/building/mineableScatterCommonality</xpath>
+				<value>
+						<mineableScatterCommonality>2</mineableScatterCommonality>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	</caseTrue>
+</Operation>
+
+
+
+
+
+
+
+</Patch>

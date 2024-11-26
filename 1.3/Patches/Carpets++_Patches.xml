@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!--SimpleCarpet 1-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "SimpleCarpetDan_q"]/placeWorkers</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "SimpleCarpetDan_q"]/comps</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "SimpleCarpetDan_q"]/costList</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!--SimpleCarpet 2-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "SimpleCarpetDan_w"]/placeWorkers</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "SimpleCarpetDan_w"]/comps</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "SimpleCarpetDan_w"]/costList</xpath>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--SimpleCarpet 3-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "SimpleCarpetDan_e"]/placeWorkers</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "SimpleCarpetDan_e"]/comps</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "SimpleCarpetDan_e"]/costList</xpath>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--Chess Carpet-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "ChessCarpetDan"]/placeWorkers</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "ChessCarpetDan"]/comps</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "ChessCarpetDan"]/costList</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!--Striped Carpet-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "StripedCarpetDan"]/placeWorkers</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "StripedCarpetDan"]/comps</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "StripedCarpetDan"]/costList</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!--Adv. Carpet 1-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "AdvCarpetDan_q"]/placeWorkers</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "AdvCarpetDan_q"]/comps</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "AdvCarpetDan_q"]/costList</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!--Adv. Carpet 2-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "AdvCarpetDan_w"]/placeWorkers</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "AdvCarpetDan_w"]/comps</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "AdvCarpetDan_w"]/costList</xpath>
+			</li>
+		</operations>
+	</Operation>	
+	
+	<!--Adv. Carpet 3-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "AdvCarpetDan_e"]/placeWorkers</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "AdvCarpetDan_e"]/comps</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "AdvCarpetDan_e"]/costList</xpath>
+			</li>
+		</operations>
+	</Operation>	
+	
+	<!--Golden carpet-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "GoldenCarpetDan"]/placeWorkers</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "GoldenCarpetDan"]/comps</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "GoldenCarpetDan"]/costList</xpath>
+			</li>
+		</operations>
+	</Operation>	
+	
+	
+	<!--EliteCarpetDan-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "EliteCarpetDan"]/placeWorkers</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "EliteCarpetDan"]/comps</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "EliteCarpetDan"]/costList</xpath>
+			</li>
+		</operations>
+	</Operation>	
+	
+</Patch>

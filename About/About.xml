@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Dragon's Medieval Patches</name>
+	<supportedVersions>
+	<li>1.0</li>
+	<li>1.1</li>
+	<li>1.2</li>
+	<li>1.3</li>
+	<li>1.4</li>
+	<li>1.5</li>
+	</supportedVersions>
+	<author>DragonKing</author>
+	<packageId>dragonking.dragonsmedievalpatches</packageId>
+	<url>
+	</url>
+	<description>
+&lt;size=24&gt;"Features"&lt;/size&gt;
+This mod contains an amalgam of patches that I made to customize my Rimworld medieval playthrough. By request from the community, I am making these available on the workshop to anyone who wants a similar experience. It does rely on a couple other mods to function properly, but you should be able to leave them out if you dont want them, therefor I wont set them as requirements.
+
+The goal of these patches is to:
+Change various research to become medieval tech.
+Harmonize, merge and split research for bows and crossbows to make it more streamlined.
+Alter descriptions and other aspects of buildables/craftables to be more medieval friendly.
+Make certain non-stuffable things stuffable (bows and crossbows for instance).
+Change some stats on certain things to my preference.
+
+NOTE: I want to eventually make some toggleable options for these changes (it takes so bloody long to do), but at the moment, you would have to make a local copy and edit the patching files.
+
+It all works through the use of xpath patching, and I try to account for absent mods, so it should always work. Let me know in the comments if something misbehaves, as it is rather difficult to simply test every single scenario when so many mods are modified.
+
+&lt;size=24&gt;Why did I make this?&lt;/size&gt;
+There are a lot of really cool medieval themed mods, and others that add cool functionality, but have parts of it blocked by being industrial tech. Because of this, I started to make my own patches to both get better at patching as a learning experience, but also to improve my gaming experience. I also noticed a bunch of craftable weapons were not stuffable, breaking compatibility with some of the other mods I use, and I like variety!
+
+&lt;size=24&gt;What is Included/changed?&lt;/size&gt;
+The following changes are made:
+
+A Dog Said
+Makes animal healing research a medieval tech.
+
+A Rimworld of Magic
+Making ranged weapons stuffable.
+
+Amrita
+Makes Amrita research a medieval tech and becomes cheaper to research.
+
+Apothecary
+The coal fueled smithy can now craft a lot of things from other mods, that the regular smithy already can.
+
+Arrows Please
+Making bows and crossbows stuffable. Bows and crossbows can be made of "Woody" stuff from "Expanded Woodworking (Forked)", where crossbows can now also be made out of anything "Metallic". I also establish a separate "Fire Arrows" research, and make weapons require both the bow type and fire arrows research to become craftable. Fireshot longbow from "Medieval Madness" is also subject of this change. Bows and siege equipment research is also split, where bows and crossbows get merged into the Medieval Madness research where appropriate.
+
+Carpets++
+Remove electrical wires from carpets, as well as the steel cost that they originally have.
+
+Expanded Woodworking (Forked)
+Not changing anything in the mod itself, but the material changes on bows etc. rely on this to work.
+
+Fertile Fields
+Makes "Terraforming" research medieval tech.
+
+Fortifications Medieval
+Makes castle walls and reinforced ditches stuffable with "Metallic".
+
+Raise The Roof
+Makes "Overhead Mountain Removal" research medieval tech.
+
+Medieval Madness
+"CraftingWorkBench" has been added as a valid craft spot for all bows and crossbows from other mods. The stat modifiers of the tools have been tweaked to offer more diversity and specialization, as well as more utility for those that felt lacking.
+
+Simple Material Weaves
+Makes all research medieval tech.
+
+Thrumbo Horn Weapons
+Thrumbo bow and thrumbo horn blade are now stuffable.
+
+Tribal Warrior Set
+War bow is now stuffable
+
+Vanilla
+Doubles the commonality of vanilla ores to:
+compacted steel 1.0 -> 2.0
+silver ore 0.1 -> 0.2
+gold ore 0.07 -> 0.14
+uranium ore 0.12 -> 0.24
+compacted plasteel 0.05 -> 0.1
+jade 0.065 -> 0.13
+compacted machinery 1.0 -> 2.0
+
+Vanilla Factions Expanded - Medieval
+Merges the heavy crossbow research into that from "Medieval Madness". Also makes the heavy crossbow stuffable with "Woody" and "Metallic" stuff.
+
+Vanilla Weapons Expanded - Tribal
+Sling is now stuffable out of "Fabric" and "Leathery" stuff.
+
+&lt;size=24&gt;What this does not do&lt;/size&gt;
+There is no removal of research, nor is there anything that limits higher tech research etc. I recommend using Rimedieval for that.
+
+&lt;size=24&gt;How to use this&lt;/size&gt;
+I always suggest that you put patches towards the bottom of your modlist.
+	</description>
+	<modDependencies>
+		<li>
+			<packageId>Imranfish.XMLExtensions</packageId>
+			<displayName>XML Extensions</displayName>
+			<downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Imranfish.XMLExtensions</li>
+	</loadAfter>
+</ModMetaData>

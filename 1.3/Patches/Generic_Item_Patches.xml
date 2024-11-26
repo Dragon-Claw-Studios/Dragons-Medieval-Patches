@@ -1,0 +1,1987 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!--Arrows Please - light crossbow-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Ranged_Crossbow"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>50</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Ranged_Crossbow"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>20</WoodLog>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Ranged_Crossbow"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>BasicCrossbows</researchPrerequisite>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Ranged_Crossbow"]/label</xpath>
+				<value>
+					<label>reinforced light crossbow</label>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Ranged_Crossbow"]/recipeMaker</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingWorkBench</li>
+						<li>AYCharcoalSmithy</li>
+						<li>FueledSmithy</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Ranged_Crossbow"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>				
+		</operations>
+	</Operation>
+
+	<!--Arrows Please - light crossbow(flaming arrow)-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Flame_Crossbow"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>20</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Flame_Crossbow"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>50</WoodLog>
+						<Cloth>20</Cloth>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Flame_Crossbow"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>BasicCrossbows</li>
+						<li>VFEM_HeavyCrossbow</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Flame_Crossbow"]/label</xpath>
+				<value>
+					<label>reinforced light crossbow(flaming arrow)</label>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Flame_Crossbow"]/recipeMaker</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingWorkBench</li>
+						<li>AYCharcoalSmithy</li>
+						<li>FueledSmithy</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Flame_Crossbow"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>				
+		</operations>
+	</Operation>
+
+	<!--Arrows Please - arbalest-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Ranged_Arbalest"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>50</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Ranged_Arbalest"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>40</WoodLog>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Ranged_Arbalest"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>HeavyCrossbows</researchPrerequisite>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Ranged_Arbalest"]/recipeMaker</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingWorkBench</li>
+						<li>AYCharcoalSmithy</li>
+						<li>FueledSmithy</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Ranged_Arbalest"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>				
+		</operations>
+	</Operation>
+
+	<!--Arrows Please - arbalest(flaming arrow)-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Flame_Arbalest"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>50</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Flame_Arbalest"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>40</WoodLog>
+						<Cloth>20</Cloth>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Flame_Arbalest"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>HeavyCrossbows</li>
+						<li>VFEM_HeavyCrossbow</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Flame_Arbalest"]/recipeMaker</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingWorkBench</li>
+						<li>AYCharcoalSmithy</li>
+						<li>FueledSmithy</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Flame_Arbalest"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>			
+		</operations>
+	</Operation>
+
+	<!--Arrows Please - waist-stretched crossbow-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Ranged_Waistcrossbow"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>55</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Ranged_Waistcrossbow"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>75</WoodLog>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Ranged_Waistcrossbow"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>HeavyCrossbows</researchPrerequisite>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Ranged_Waistcrossbow"]/recipeMaker</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingWorkBench</li>
+						<li>AYCharcoalSmithy</li>
+						<li>FueledSmithy</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Ranged_Waistcrossbow"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>				
+		</operations>
+	</Operation>
+
+	<!--Arrows Please - repeating crossbow-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Ranged_Repeatingcrossbow"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Ranged_Repeatingcrossbow"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>100</WoodLog>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Ranged_Repeatingcrossbow"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>MultishotCrossbows</researchPrerequisite>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Ranged_Repeatingcrossbow"]/label</xpath>
+				<value>
+					<label>reinforced repeating crossbow</label>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Ranged_Repeatingcrossbow"]/recipeMaker</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingWorkBench</li>
+						<li>AYCharcoalSmithy</li>
+						<li>FueledSmithy</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Ranged_Repeatingcrossbow"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>				
+		</operations>
+	</Operation>
+
+	<!--Arrows Please - ballista-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Turret_Ballista"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>60</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Turret_Ballista"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>150</WoodLog>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--Arrows Please - mounted triple-bow crossbow-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Turret_Triplecrossbow"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>60</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Turret_Triplecrossbow"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>200</WoodLog>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!--Arrows Please - blowgun-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Ranged_Blowgun"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>20</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Ranged_Blowgun"]/costList</xpath>
+				<value>
+					<costList>
+						<MedicineHerbal>10</MedicineHerbal>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--Arrows Please - throwing torch-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Ranged_Torch"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>	
+
+
+	<!--Arrows Please - short bow(flaming arrow)-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Bowshort_Flame"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Bowshort_Flame"]/costList</xpath>
+				<value>
+					<costList>
+						<Cloth>15</Cloth>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Bowshort_Flame"]/recipeMaker</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>VFEM_HeavyCrossbow</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Bowshort_Flame"]/recipeMaker</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingSpot</li>
+						<li>CraftingWorkBench</li>
+						<li>AYCharcoalSmithy</li>
+						<li>FueledSmithy</li>
+					</recipeUsers>
+				</value>
+			</li>
+		</operations>
+	</Operation>	
+
+	<!--Arrows Please - recurve bow(flaming arrow)-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Bowrecurve_Flame"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>40</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Bowrecurve_Flame"]/costList</xpath>
+				<value>
+					<costList>
+						<Cloth>20</Cloth>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Bowrecurve_Flame"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>RecurveBow</li>
+						<li>VFEM_HeavyCrossbow</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Bowrecurve_Flame"]/recipeMaker</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingSpot</li>
+						<li>CraftingWorkBench</li>
+						<li>AYCharcoalSmithy</li>
+						<li>FueledSmithy</li>
+					</recipeUsers>
+				</value>
+			</li>
+		</operations>
+	</Operation>	
+
+	<!--Arrows Please - greatbow(flaming arrow)-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Bowgreat_Flame"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>50</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Bowgreat_Flame"]/costList</xpath>
+				<value>
+					<costList>
+						<Cloth>20</Cloth>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Bowgreat_Flame"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Greatbow</li>
+						<li>VFEM_HeavyCrossbow</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Bowgreat_Flame"]/recipeMaker</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingWorkBench</li>
+						<li>AYCharcoalSmithy</li>
+						<li>FueledSmithy</li>
+					</recipeUsers>
+				</value>
+			</li>
+		</operations>
+	</Operation>	
+
+	<!--Medieval Madness - hand crossbow-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_hand"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>10</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_hand"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>30</WoodLog>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_hand"]/recipeMaker/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingWorkBench</li>
+						<li>AYCharcoalSmithy</li>
+						<li>FueledSmithy</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_hand"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>			
+		</operations>
+	</Operation>
+
+	<!--Medieval Madness - light crossbow-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_light"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>15</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_light"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>40</WoodLog>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_light"]/recipeMaker/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingWorkBench</li>
+						<li>AYCharcoalSmithy</li>
+						<li>FueledSmithy</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_light"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>				
+		</operations>
+	</Operation>
+
+	<!--Medieval Madness - harpoon-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MMr_harpoon"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>20</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MMr_harpoon"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>50</WoodLog>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--Medieval Madness - throwing knives-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MMr_tknives"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MMr_tknives"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>20</WoodLog>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--Medieval Madness - forged bolas-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MMr_fbolas"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>40</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--Medieval Madness - throwing axes-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MMr_taxes"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>45</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MMr_taxes"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>30</WoodLog>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--Medieval Madness - javelin-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MMr_javelin"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>50</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MMr_javelin"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>35</WoodLog>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--Medieval Madness - heavy crossbow-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_heavy"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>50</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_heavy"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>40</WoodLog>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_heavy"]/label</xpath>
+				<value>
+					<label>reinforced heavy crossbow</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_heavy"]/recipeMaker/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingWorkBench</li>
+						<li>AYCharcoalSmithy</li>
+						<li>FueledSmithy</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_heavy"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>				
+		</operations>
+	</Operation>
+
+	<!--Medieval Madness - doubleshot crossbow-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_double"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>60</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_double"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>50</WoodLog>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_double"]/recipeMaker/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingWorkBench</li>
+						<li>AYCharcoalSmithy</li>
+						<li>FueledSmithy</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_double"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>				
+		</operations>
+	</Operation>
+
+	<!--Medieval Madness - repeater crossbow-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_repeater"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>60</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_repeater"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>35</WoodLog>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_repeater"]/recipeMaker/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingWorkBench</li>
+						<li>AYCharcoalSmithy</li>
+						<li>FueledSmithy</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_repeater"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>			
+		</operations>
+	</Operation>
+
+	<!--Medieval Madness - fireshot longbow-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MMr_firelongbow"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>45</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MMr_firelongbow"]/costList</xpath>
+				<value>
+					<costList>
+						<Cloth>30</Cloth>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MMr_firelongbow"]/recipeMaker/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingWorkBench</li>
+						<li>AYCharcoalSmithy</li>
+						<li>FueledSmithy</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MMr_firelongbow"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>				
+		</operations>
+	</Operation>
+
+	<!--Medieval Madness - fireshot longbow fire arrow research if arrow please is present-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Arrow Please (Continued)</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "MMr_firelongbow"]/recipeMaker/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>LongBows</li>
+							<li>VFEM_HeavyCrossbow</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!--Medieval Madness - siege crossbow-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_Siege"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>140</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_Siege"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>70</WoodLog>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_Siege"]/recipeMaker/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingWorkBench</li>
+						<li>AYCharcoalSmithy</li>
+						<li>FueledSmithy</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MMr_crossbow_Siege"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>				
+		</operations>
+	</Operation>
+
+	<!--Medieval Madness - composite longbow-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MMr_clongbow"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>60</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MMr_clongbow"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>120</WoodLog>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MMr_clongbow"]/recipeMaker/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingWorkBench</li>
+						<li>AYCharcoalSmithy</li>
+						<li>FueledSmithy</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MMr_clongbow"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>				
+		</operations>
+	</Operation>
+
+	<!--Medieval Madness - Wooden mallet-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "MM_mallet"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>50</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MM_mallet"]/costList</xpath>
+				<value>
+					<costList>
+						<Steel>10</Steel>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--Vanilla Factions Expanded - Medieval - heavy crossbow-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "VFEM_Bow_HeavyCrossbow"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>25</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "VFEM_Bow_HeavyCrossbow"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>80</WoodLog>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "VFEM_Bow_HeavyCrossbow"]/recipeMaker/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingWorkBench</li>
+						<li>AYCharcoalSmithy</li>
+						<li>FueledSmithy</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "VFEM_Bow_HeavyCrossbow"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>				
+		</operations>
+	</Operation>
+
+	<!--Vanilla Factions Expanded - Medieval - heavy crossbow custom arrow please research-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Arrow Please (Continued)</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "VFEM_Bow_HeavyCrossbow"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>HeavyCrossbows</researchPrerequisite>
+				</value>
+			</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!--Vanilla Factions Expanded - Medieval - heavy crossbow medieval madness research-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Madness: Tools of the Trade</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "VFEM_Bow_HeavyCrossbow"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>HeavyCrossbows</researchPrerequisite>
+				</value>
+			</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!--Dragon's Descent - double crossbow-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "DD_Bow_DoubleCrossbow"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "DD_Bow_DoubleCrossbow"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>45</WoodLog>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "DD_Bow_DoubleCrossbow"]/label</xpath>
+				<value>
+					<label>reinforced double crossbow</label>
+				</value>
+			</li>			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "DD_Bow_DoubleCrossbow"]/recipeMaker/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingWorkBench</li>
+						<li>AYCharcoalSmithy</li>
+						<li>FueledSmithy</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "DD_Bow_DoubleCrossbow"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>				
+		</operations>
+	</Operation>
+
+	<!--Dragon's Descent - double crossbow custom arrow please research-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Arrow Please (Continued)</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "DD_Bow_DoubleCrossbow"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>HeavyCrossbows</researchPrerequisite>
+				</value>
+			</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!--Dragon's Descent - double crossbow medieval madness research-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Madness: Tools of the Trade</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "DD_Bow_DoubleCrossbow"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>HeavyCrossbows</researchPrerequisite>
+				</value>
+			</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!--Vanilla Weapons Expanded - Tribal - sling-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "VWE_Sling"]/costList</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "VWE_Sling"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Fabric</li>
+						<li>Leathery</li>
+					</stuffCategories>
+					<costStuffCount>10</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--Tribal Warrior Set - war bow-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Gunmar_War_Bow"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>75</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Gunmar_War_Bow"]/costList</xpath>
+				<value>
+					<costList>
+						<Leather_Plain>45</Leather_Plain>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Gunmar_War_Bow"]/recipeMaker/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingSpot</li>
+						<li>CraftingWorkBench</li>
+						<li>AYCharcoalSmithy</li>
+						<li>FueledSmithy</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Gunmar_War_Bow"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>				
+		</operations>
+	</Operation>
+	
+	<!--Thrumbo Horn Weapons - thrumbo bow-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "SC_Thrumbo_HornBow"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>20</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "SC_Thrumbo_HornBow"]/costList</xpath>
+				<value>
+					<costList>
+						<Leather_Thrumbo>40</Leather_Thrumbo>
+						<ThrumboHorn>2</ThrumboHorn>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "SC_Thrumbo_HornBow"]/recipeMaker</xpath>
+				<value>
+					<recipeUsers>
+						<li>CraftingWorkBench</li>
+						<li>AYCharcoalSmithy</li>
+						<li>FueledSmithy</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "SC_Thrumbo_HornBow"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>				
+		</operations>
+	</Operation>
+
+	<!--Thrumbo Horn Weapons - thrumbo horn blade-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "SC_Thrumbo_HornBlade"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>45</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "SC_Thrumbo_HornBlade"]/costList</xpath>
+				<value>
+					<costList>
+					  <Leather_Thrumbo>50</Leather_Thrumbo>
+					  <ThrumboHorn>1</ThrumboHorn>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "SC_Thrumbo_HornBlade"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>					
+		</operations>
+	</Operation>
+
+	<!--A Rimworld of Magic - elephant spear-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TM_ElephantSpear"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>20</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "TM_ElephantSpear"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>60</WoodLog>
+						<RawMagicyte>80</RawMagicyte>
+						<ElephantTusk>2</ElephantTusk>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--A Rimworld of Magic - elephant bow-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TM_ElephantBow"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>20</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "TM_ElephantBow"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>100</WoodLog>
+						<RawMagicyte>100</RawMagicyte>
+						<ElephantTusk>2</ElephantTusk>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--A Rimworld of Magic - thrumbo axe-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TM_ThrumboAxe"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>200</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "TM_ThrumboAxe"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>50</WoodLog>
+						<Jade>50</Jade>
+						<Silver>20</Silver>
+						<RawMagicyte>200</RawMagicyte>
+						<ThrumboHorn>2</ThrumboHorn>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--A Rimworld of Magic - thrumbo saber-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TM_ThrumboSaber"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>100</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "TM_ThrumboSaber"]/costList</xpath>
+				<value>
+					<costList>
+						<Jade>50</Jade>
+						<Silver>200</Silver>
+						<RawMagicyte>200</RawMagicyte>
+						<ThrumboHorn>1</ThrumboHorn>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--A Rimworld of Magic - thrumbow-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TM_ThrumBow"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>50</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "TM_ThrumBow"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>250</WoodLog>
+						<Jade>50</Jade>
+						<Gold>2</Gold>
+						<Silver>20</Silver>
+						<RawMagicyte>250</RawMagicyte>
+						<ThrumboHorn>2</ThrumboHorn>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--A Rimworld of Magic - Wand of Fire-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TM_FireWand"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>20</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "TM_FireWand"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>50</WoodLog>
+						<RawMagicyte>30</RawMagicyte>
+						<Jade>10</Jade>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--A Rimworld of Magic - Wand of Ice-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TM_IceWand"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>20</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "TM_IceWand"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>50</WoodLog>
+						<RawMagicyte>30</RawMagicyte>
+						<Jade>10</Jade>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--A Rimworld of Magic - Wand of Lightning-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TM_LightningWand"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>20</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "TM_LightningWand"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>50</WoodLog>
+						<RawMagicyte>30</RawMagicyte>
+						<Jade>10</Jade>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--A Rimworld of Magic - Staff of the Defender-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TM_DefenderStaff"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>50</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "TM_DefenderStaff"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>200</WoodLog>
+						<Jade>75</Jade>
+						<Gold>2</Gold>
+						<Uranium>10</Uranium>
+						<RawMagicyte>200</RawMagicyte>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--A Rimworld of Magic - Staff of blazing power-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TM_BlazingPowerStaff"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>120</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "TM_BlazingPowerStaff"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodLog>100</WoodLog>
+						<Jade>50</Jade>
+						<Gold>5</Gold>
+						<Uranium>20</Uranium>
+						<RawMagicyte>200</RawMagicyte>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--A Rimworld of Magic - Ring of Elemental Fire-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Seer_FireRing"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--A Rimworld of Magic - Ring of Elemental Ice-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Seer_IceRing"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--A Rimworld of Magic - Ring of Elemental Lightning-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Seer_LightningRing"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--Arrow please - crossbow research to mounted bows research-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName = "Crossbow"]/label</xpath>
+				<value>
+					<label>mounted bows</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName = "Crossbow"]/description</xpath>
+				<value>
+					<description>Craft mounted bows to protect your colony.</description>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--Medieval Madness - heavy crossbow research prerequisite-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName = "HeavyCrossbows"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+						<li>BasicCrossbows</li>
+					</prerequisites>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--fire arrows-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Arrow Please (Continued)</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Medieval</li>
+					</mods>
+					<!--Vanilla factions medieval - crossbow research to fire arrows-->
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/ResearchProjectDef[defName = "VFEM_HeavyCrossbow"]/label</xpath>
+								<value>
+									<label>fire arrows</label>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/ResearchProjectDef[defName = "VFEM_HeavyCrossbow"]/description</xpath>
+								<value>
+									<description>Allows for the creation of bows that can shoot fire arrows.</description>
+								</value>
+							</li>
+							<li Class="PatchOperationRemove">
+								<xpath>Defs/ResearchProjectDef[defName = "VFEM_HeavyCrossbow"]/prerequisites</xpath>
+							</li>
+						</operations>
+					</match>
+					<!--Arrow Please (Continued) - fire arrows research if Vanilla factions medieval is not loaded-->
+					<nomatch Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs</xpath>
+								<value>
+									<ResearchProjectDef>
+										<defName>VFEM_HeavyCrossbow</defName>
+										<label>fire arrows</label>
+										<description>Allows for the creation of bows that can shoot fire arrows.</description>
+										<baseCost>800</baseCost>
+										<techLevel>Medieval</techLevel>
+										<researchViewX>4.00</researchViewX>
+										<researchViewY>5.50</researchViewY>
+									</ResearchProjectDef>
+								</value>
+							</li>
+						</operations>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!--arrow please - research split creation-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Arrow Please (Continued)</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Medieval</li>
+					</mods>
+					<!--Arrow Please (Continued) - create missing research-->
+					<nomatch Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs</xpath>
+								<value>
+									<ResearchProjectDef>
+										<defName>BasicCrossbows</defName>
+										<label>Basic crossbows</label>
+										<description>Craft simple crossbows, that have superior armor penetration, but lower reload speed compared to shortbows.</description>
+										<baseCost>400</baseCost>	
+										<techLevel>Medieval</techLevel>
+										<researchViewX>2</researchViewX>
+										<researchViewY>5.5</researchViewY>
+									</ResearchProjectDef> 
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs</xpath>
+								<value>
+									<ResearchProjectDef>
+										<defName>MultishotCrossbows</defName>
+										<label>Multishot crossbows</label>
+										<description>A relatively simple upgrade to crossbow firing mechanism allows production of models that can fire several shots in a row before reloading.</description>
+										<baseCost>600</baseCost>	
+										<techLevel>Medieval</techLevel>
+										<prerequisites>
+											<li>BasicCrossbows</li>
+										</prerequisites>
+										<researchViewX>3</researchViewX>
+										<researchViewY>5.5</researchViewY>
+									</ResearchProjectDef> 
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs</xpath>
+								<value>
+									<ResearchProjectDef>
+										<defName>HeavyCrossbows</defName>
+										<label>Heavy crossbows</label>
+										<description>Craft long range siege crossbows - sophisticated mechanisms capable of launching heavy projectiles over extreme ranges and piercing through all but heaviest of armors.</description>
+										<baseCost>700</baseCost>	
+										<techLevel>Medieval</techLevel>
+										<prerequisites>
+											<li>BasicCrossbows</li>
+										</prerequisites>
+										<researchViewX>4</researchViewX>
+										<researchViewY>5.5</researchViewY>
+									</ResearchProjectDef> 
+								</value>
+							</li>
+						</operations>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- Fortifications Medieval - Castle Wall-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Fortifications - Medieval</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "FT_CastleWall"]/stuffCategories</xpath>
+					<value>
+						<stuffCategories>
+							<li>Stony</li>
+							<li>Metallic</li>
+						</stuffCategories>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- Fortifications Medieval - Reinforced Ditch-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Fortifications - Medieval</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "FT_ReinforcedDitch"]/stuffCategories</xpath>
+					<value>
+						<stuffCategories>
+							<li>Stony</li>
+							<li>Metallic</li>
+						</stuffCategories>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!--Medieval Madness - pitchfork stat offsets-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MM_Pitchfork"]/equippedStatOffsets</xpath>
+				<value>
+					<equippedStatOffsets>
+						<AnimalGatherSpeed>0.3</AnimalGatherSpeed>
+						<AnimalGatherYield>0.3</AnimalGatherYield>
+					</equippedStatOffsets>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--Medieval Madness - sickle stat offsets-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MM_Sickle"]/equippedStatOffsets</xpath>
+				<value>
+					<equippedStatOffsets>
+						<PlantWorkSpeed>0.3</PlantWorkSpeed>
+						<PlantHarvestYield>0.1</PlantHarvestYield>
+						<ResearchSpeedFactor>0.2</ResearchSpeedFactor>
+					</equippedStatOffsets>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--Medieval Madness - woodcutteraxe stat offsets-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MM_Woodcutteraxe"]/equippedStatOffsets</xpath>
+				<value>
+					<equippedStatOffsets>
+						<PlantWorkSpeed>0.1</PlantWorkSpeed>
+						<PlantHarvestYield>0.2</PlantHarvestYield>
+						<GeneralLaborSpeed>0.2</GeneralLaborSpeed>
+					</equippedStatOffsets>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--Medieval Madness - hammer stat offsets-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MM_SHammer"]/equippedStatOffsets</xpath>
+				<value>
+					<equippedStatOffsets>
+						<ConstructionSpeed>0.2</ConstructionSpeed>
+						<SmoothingSpeed>0.2</SmoothingSpeed>
+						<GeneralLaborSpeed>0.4</GeneralLaborSpeed>
+						<ConstructSuccessChance>0.2</ConstructSuccessChance>
+					</equippedStatOffsets>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--Medieval Madness - meat cleaver stat offsets-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MM_cleaver"]/equippedStatOffsets</xpath>
+				<value>
+					<equippedStatOffsets>
+						<ButcheryFleshSpeed>0.3</ButcheryFleshSpeed>
+						<ButcheryFleshEfficiency>0.3</ButcheryFleshEfficiency>
+						<MedicalOperationSpeed>0.2</MedicalOperationSpeed>
+					</equippedStatOffsets>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!--Medieval Madness - pickaxe stat offsets-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MM_pickaxe"]/equippedStatOffsets</xpath>
+				<value>
+					<equippedStatOffsets>
+						<MiningSpeed>0.35</MiningSpeed>
+						<MiningYield>0.15</MiningYield>
+					</equippedStatOffsets>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!--Medieval Madness - shovel stat offsets-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MM_shovel"]/equippedStatOffsets</xpath>
+				<value>
+					<equippedStatOffsets>
+						<ConstructionSpeed>0.3</ConstructionSpeed>
+						<PlantWorkSpeed>0.2</PlantWorkSpeed>
+					</equippedStatOffsets>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!--Medieval Madness - scythe stat offsets-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MM_scythe"]/equippedStatOffsets</xpath>
+				<value>
+					<equippedStatOffsets>
+						<PlantWorkSpeed>0.4</PlantWorkSpeed>
+						<PlantHarvestYield>0.2</PlantHarvestYield>
+					</equippedStatOffsets>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!--Medieval Madness - wooden mallet stat offsets-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MM_mallet"]/equippedStatOffsets</xpath>
+				<value>
+					<equippedStatOffsets>
+						<ConstructionSpeed>0.4</ConstructionSpeed>
+						<SmoothingSpeed>0.4</SmoothingSpeed>
+						<GeneralLaborSpeed>0.2</GeneralLaborSpeed>
+						<ConstructSuccessChance>0.1</ConstructSuccessChance>
+					</equippedStatOffsets>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+
+
+</Patch>
